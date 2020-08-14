@@ -25,41 +25,43 @@
 
 
 <section>
-がめんにせんをかいてみよう！
-DRAWコマンドでせんをかくことができるよ
-<div class=ichigojam>DRAW 1,1,70,70</div>
-２つばしょをしていしてあげよう<br>
-さいしょの1,1でさいしょのばしょ。<br>
-つぎの70,70,でつぎのばしょをしていしよう。
+スタートの文章を表示し１つランダムに数字を０から６に決めよおう
+<div class=ichigojam>10 A=RND(6):
+11 INPUT "0~6ﾆｭｳﾘｮｸｼﾃﾈ",B",B</div>
+
 </section>
     
 
 <section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+ランダムの数字とおんなじだと大吉にしてあげよう
+<div class=ichigojam>20 IF A=B ?"!!!ﾀﾞｲｷﾁ!!!"</div>
+
 </section>
 
 
 <section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
+大吉以外も作ろう
+<div class=ichigojam>30 IF A=B+1 ?"CYUKICHI"
+33 IF A-1=B ?"CYUKICHI"
+34 IF A=B+2 ?"KICHI"
+35 IF A=B-2 ?"KICHI"
+36 IF A=B+3 ?"SYOUKICHI"
+37 IF A=B-3 ?"SYOUKICHI"
+38 IF A=B+4 ?"KYOU"
+39 IF A=B-4 ?"KYOU"
+40 IF A=B+5 ?"DAKICHI"
+41 IF A=B-5 ?"DAKICHI"
+42 IF A=B+6 ?"SYAIKYOU"
+43 IF A=B-6 ?"SAIKYOU"
+100 IF A!=B GOTO11
 </div>
 RUNでじっこうしてみると、どうなるかな？
 </section>
 
 <section>
-FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
-</section>
-
-
-<section>
-<b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
+指定の
+指定の数字との差を利用することであたりに
+区別かつく
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
