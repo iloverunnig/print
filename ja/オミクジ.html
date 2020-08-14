@@ -1,10 +1,27 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>がめんにいたずらしてみよう！　DRAW</title>
+<title>おみくじゲームを作ろう</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>がめんにいたずらしてみよう！　DRAW</h1>
+<h1>おみくじゲームを作ろう
+    10 A=RND(6):
+11 INPUT "0~6ﾆｭｳﾘｮｸｼﾃﾈ",B
+20 IF A=B ?"!!!ﾀﾞｲｷﾁ!!!"
+30 IF A=B+1 ?"CYUKICHI"
+33 IF A-1=B ?"CYUKICHI"
+34 IF A=B+2 ?"KICHI"
+35 IF A=B-2 ?"KICHI"
+36 IF A=B+3 ?"SYOUKICHI"
+37 IF A=B-3 ?"SYOUKICHI"
+38 IF A=B+4 ?"KYOU"
+39 IF A=B-4 ?"KYOU"
+40 IF A=B+5 ?"DAKICHI"
+41 IF A=B-5 ?"DAKICHI"
+42 IF A=B+6 ?"SYAIKYOU"
+43 IF A=B-6 ?"SAIKYOU"
+100 IF A!=B GOTO11
+</h1>
 
 
 <section>
